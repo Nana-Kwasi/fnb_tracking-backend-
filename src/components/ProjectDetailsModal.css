@@ -1,0 +1,350 @@
+.project-details-modal {
+  max-width: 700px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.project-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.project-id-badge {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-id-label {
+  font-size: 0.75rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.project-id-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00A8A8;
+  letter-spacing: 0.5px;
+}
+
+.status-badge-large {
+  padding: 0.5rem 1.25rem;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge-large.pending {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffc107;
+}
+
+.status-badge-large.accepted {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #28a745;
+}
+
+.status-badge-large.rejected {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #dc3545;
+}
+
+.status-badge-large.discussion {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #17a2b8;
+}
+
+.status-badge-large.documentation {
+  background: #e2e3e5;
+  color: #383d41;
+  border: 1px solid #6c757d;
+}
+
+.status-badge-large.developers_discussion {
+  background: #cce5ff;
+  color: #004085;
+  border: 1px solid #0056b3;
+}
+
+.status-badge-large.testing {
+  background: #fff4e6;
+  color: #cc6600;
+  border: 1px solid #ff9900;
+}
+
+.status-badge-large.int {
+  background: #e6f3ff;
+  color: #003366;
+  border: 1px solid #0066cc;
+}
+
+.status-badge-large.qa {
+  background: #f0e6ff;
+  color: #4d0066;
+  border: 1px solid #8000cc;
+}
+
+.status-badge-large.uat {
+  background: #ffe6f0;
+  color: #660033;
+  border: 1px solid #cc0066;
+}
+
+.status-badge-large.qa_sign_off_in_progress {
+  background: #fff9e6;
+  color: #664d00;
+  border: 1px solid #cc9900;
+}
+
+.status-badge-large.qa_sign_off_complete {
+  background: #e6ffe6;
+  color: #006600;
+  border: 1px solid #00cc00;
+}
+
+.status-badge-large.release_notes_prepared {
+  background: #e6f9ff;
+  color: #006699;
+  border: 1px solid #0099cc;
+}
+
+.status-badge-large.released_to_production {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #28a745;
+}
+
+.status-badge-large.in_progress {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #17a2b8;
+}
+
+.status-badge-large.completed {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #28a745;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #00A8A8;
+  transition: all 0.2s ease;
+}
+
+.detail-item:hover {
+  background: #e9ecef;
+  transform: translateX(3px);
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.description-section,
+.rejection-section,
+.attachments-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.description-section h3,
+.rejection-section h3,
+.attachments-section h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #00A8A8;
+}
+
+.description-text,
+.rejection-text {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  color: #333;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  border: 1px solid #e0e0e0;
+}
+
+.rejection-section {
+  background: #fff5f5;
+  border-color: #f8d7da;
+}
+
+.rejection-section h3 {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.rejection-text {
+  border-color: #f8d7da;
+  background: #fff;
+}
+
+.attachments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.attachment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+.attachment-item:hover {
+  border-color: #00A8A8;
+  box-shadow: 0 2px 8px rgba(0, 168, 168, 0.1);
+}
+
+.attachment-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.file-icon {
+  font-size: 1.5rem;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.file-size {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.attachment-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-file-btn,
+.download-file-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.view-file-btn {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.view-file-btn:hover {
+  background: #bbdefb;
+  transform: translateY(-1px);
+}
+
+.download-file-btn {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.download-file-btn:hover {
+  background: #c8e6c9;
+  transform: translateY(-1px);
+}
+
+.loading-state,
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.loading-state p {
+  margin-top: 1rem;
+  color: #666;
+}
+
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.error-state p {
+  color: #dc3545;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.error-hint {
+  color: #6c757d !important;
+  font-size: 0.9rem;
+  font-weight: 400 !important;
+}
